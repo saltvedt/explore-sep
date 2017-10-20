@@ -18,4 +18,3 @@ end
 identifiers.uniq!
 
 File.open(IDENTIFIERS_FILE, 'w') { |f| f.write identifiers.to_yaml }
-
