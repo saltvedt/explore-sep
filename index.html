@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="web/svg-pan-zoom.js"></script>
+    <style>
+      html {
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <embed id="sep-graph" type="image/svg+xml" style="width: 100%; height: 100%; border:1px solid black; " src="graphs/all-labels.svg" />
+
+    <script>
+      // Don't use window.onLoad like this in production, because it can only listen to one function.
+      window.onload = function() {
+        svgPanZoom('#sep-graph', {
+          zoomEnabled: true,
+          controlIconsEnabled: true
+        });
+      };
+    </script>
+
+  </body>
+
+</html>
