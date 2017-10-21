@@ -9,13 +9,13 @@
         background-color: black;
       }
     </style>
+    <title>Graph of 'related entries' of The Stanford Encyclopedia of Philosophy</title>
   </head>
 
   <body>
     <embed id="sep-graph" style="position:fixed; top:0; left:0; height:100%; width:100%" type="image/svg+xml"  src="graphs/some-labels.svg" />
 
     <script>
-      // Don't use window.onLoad like this in production, because it can only listen to one function.
       window.onload = function() {
         svgPanZoom('#sep-graph', {
           zoomEnabled: true,
